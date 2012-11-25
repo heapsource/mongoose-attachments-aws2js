@@ -1,0 +1,19 @@
+{
+  "author": "Firebase.co <npm@firebase.co> (http://www.firebase.co/)",
+  "name": "mongoose-attachments-aws2js",
+  "description": "S3 Storage Provider for mongoose-attachments backed by Amazon Web Services node.js module",
+  "version": "1.0.0",
+  "homepage": "https://github.com/firebaseco/mongoose-attachments-aws2js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/firebaseco/mongoose-attachments-aws2js.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "aws2js": "0.6.x",
+    "mongoose-attachments": "0.0.x"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
