@@ -26,21 +26,23 @@ For further instructions check [mongoose-attachments](https://github.com/firebas
       key: '<key>',
       secret: '<secret>',
       bucket: '<bucket>',
-      endpoint: 'https://' + options.bucket + '.s3.amazonaws.com'
+      endpoint: 'https://' + options.bucket + '.s3.amazonaws.com',
+      acl: "public-read" // false or "private" by default
     }
 
 `endpoint` is optional and defaults to `'https://' + options.bucket + '.s3.amazonaws.com'`.
+`acl` is by default `false` or `private`. If you don't want to create complex s3 policies to download the files then use `public-read`.
 
 For other configurations check [mongoose-attachments](https://github.com/firebaseco/mongoose-attachments).
 
 ### Contributors
 
-* [Johan Hernandez](https://github.com/thepumpkin1979)
+* [Firebase.co](https://github.com/firebaseco)
 * [Chantal Ackermann](https://github.com/nuarhu)
 
 ## License (MIT)
 
-Copyright (c) 2011-2012 Firebase.co - http://firebase.co
+Copyright (c) 2011-2013 Firebase.co - http://firebase.co
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
