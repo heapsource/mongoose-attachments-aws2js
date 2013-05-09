@@ -8,9 +8,10 @@ S3 Storage Provider for [mongoose-attachments](https://github.com/firebaseco/mon
 
 ### Usage
 
-The library will register automatically with `mongoose-attachments` by performing `require`:
+The library will register automatically with `mongoose-attachments` by performing `require` and
+return a reference to the mongoose-attachments plugin:
 
-    require('mongoose-attachments-aws2js')
+    var attachments = require('mongoose-attachments-aws2js');
 
 For further instructions check [mongoose-attachments](https://github.com/firebaseco/mongoose-attachments).
 
